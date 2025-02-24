@@ -8,11 +8,7 @@
     "build-js": "webpack -p --env.NODE_ENV=prod --config ./__deployment_files/webpack.config.js --env.DIR_PATH=public/web/js --progress --env.BUILD_TYPE=js --env.BUILD_FOLDER=_prod",
     "build-js-dev": "webpack -d --env.NODE_ENV=dev --config ./__deployment_files/webpack.config.js --env.DIR_PATH=public/web/js --progress --env.BUILD_TYPE=js --env.BUILD_FOLDER=_prod",
     "dev": "npm run build-css-dev && npm run build-js-dev",
-    "build": "npm run build-css && npm run build-js",
-    "test": "php -f \"./__standalone/for_tests.php\"",
-    "random_hash": "php -r \"$hash = md5(time() + mt_rand(1000000,9999999)); exit($hash);\"",
-    "md5": "php -f \"./__standalone/md5.php\"",
-    "unban": "php -f \"./__standalone/unban_ip.php\""
+    "build": "npm run build-css && npm run build-js"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0",
