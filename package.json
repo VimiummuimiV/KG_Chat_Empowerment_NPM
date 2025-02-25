@@ -38,7 +38,13 @@
   },
   "private": true,
   "main": "add-userscript-header.js",
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "chat",
+    "empowerment",
+    "abilities",
+    "communication",
+    "klavogonki"
+  ],
+  "author": "Patcher",
   "license": "ISC"
 }
