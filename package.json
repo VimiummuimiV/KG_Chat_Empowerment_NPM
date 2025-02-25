@@ -7,7 +7,7 @@
     "build-css-dev": "webpack -d --config ./__deployment_files/webpack.config.js --env.DIR_PATH=public/web/css --progress --env.BUILD_FOLDER=_prod",
     "build-js": "webpack -p --env.NODE_ENV=prod --config ./__deployment_files/webpack.config.js --env.DIR_PATH=public/web/js --progress --env.BUILD_TYPE=js --env.BUILD_FOLDER=_prod",
     "build-js-dev": "webpack -d --env.NODE_ENV=dev --config ./__deployment_files/webpack.config.js --env.DIR_PATH=public/web/js --progress --env.BUILD_TYPE=js --env.BUILD_FOLDER=_prod",
-    "build-userscript": "USERSCRIPT=public/web/js/_prod/KG_Chat_Empowerment.min.js node add-userscript-header.js",
+    "build-userscript": "set USERSCRIPT=public/web/js/_prod/KG_Chat_Empowerment.min.js&& node add-userscript-header.js",
     "userscript": "npm run build-js && npm run build-userscript",
     "dev": "npm run build-css-dev && npm run build-js-dev",
     "build": "npm run build-css && npm run build-js"
@@ -22,6 +22,7 @@
     "@jetbrains/youtrack-scripting-api": "^2019.3.68795",
     "babel-loader": "^8.0.2",
     "core-js": "^3.2.1",
+    "cross-env": "^7.0.3",
     "css-loader": "^1.0.0",
     "extract-loader": "^2.0.1",
     "file-loader": "^2.0.0",
@@ -31,9 +32,13 @@
     "less-loader": "^4.1.0",
     "npx": "^10.2.0",
     "request": "^2.88.0",
-    "webpack": "^4.16.2",
-    "webpack-cli": "^3.1.0",
+    "webpack": "^4.47.0",
+    "webpack-cli": "^3.3.12",
     "youtube.get-video-info": "^1.0.1"
   },
-  "private": true
+  "private": true,
+  "main": "add-userscript-header.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
