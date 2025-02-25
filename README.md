@@ -1,4 +1,4 @@
-npm demo
+KG_Chat_Empowerment_NPM
 ========
 
 1. `npm install -g webpack webpack-cli`
